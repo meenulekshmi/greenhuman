@@ -1,12 +1,12 @@
-// subtle scroll animation
-const items = document.querySelectorAll('.feature-item');
+// Features fade-in on scroll
+const features = document.querySelectorAll('.feature-item');
 
 window.addEventListener('scroll', () => {
-  items.forEach(item => {
-    const pos = item.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 100) {
-      item.style.opacity = 1;
-      item.style.transform = 'translateY(0)';
+  features.forEach(feature => {
+    const top = feature.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) {
+      feature.style.opacity = 1;
+      feature.style.transform = 'translateY(0)';
     }
   });
 });
