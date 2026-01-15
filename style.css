@@ -2,7 +2,7 @@
    VARIABLES & RESET
 ----------------------------- */
 :root {
-  --greenhuman-green: #2c7a7b; /* Original GreenHuman teal-ish green */
+  --greenhuman-green: #2c7a7b; /* Official GreenHuman green */
   --white: #ffffff;
   --text-dark: #1f2933;
 }
@@ -24,7 +24,7 @@ body {
    NAVBAR
 ----------------------------- */
 .navbar {
-  background-color: var(--white);
+  background-color: var(--white) !important;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: 0.3s ease;
@@ -33,17 +33,17 @@ body {
 .navbar .navbar-brand {
   font-weight: 700;
   font-size: 1.6rem;
-  color: var(--greenhuman-green);
+  color: var(--greenhuman-green) !important;
 }
 
 .navbar .nav-link {
-  color: var(--text-dark);
+  color: var(--text-dark) !important;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: var(--greenhuman-green);
+  color: var(--greenhuman-green) !important;
 }
 
 /* -----------------------------
@@ -112,7 +112,7 @@ body {
 
 .plan-card.featured {
   border: 2px solid var(--greenhuman-green);
-  background: #e6fffa; /* soft highlight for featured plan */
+  background: #e6fffa;
 }
 
 .plan-card h4 {
@@ -145,25 +145,25 @@ body {
 
 /* Solid green buttons */
 .plan-card .btn-success {
-  background-color: var(--greenhuman-green);
-  border-color: var(--greenhuman-green);
-  color: var(--white);
+  background-color: var(--greenhuman-green) !important;
+  border-color: var(--greenhuman-green) !important;
+  color: var(--white) !important;
 }
 
 .plan-card .btn-success:hover {
-  background-color: #23665d; /* slightly darker on hover */
-  border-color: #23665d;
+  background-color: #23665d !important;
+  border-color: #23665d !important;
 }
 
 /* Outline green buttons */
 .plan-card .btn-outline-success {
-  color: var(--greenhuman-green);
-  border-color: var(--greenhuman-green);
+  color: var(--greenhuman-green) !important;
+  border-color: var(--greenhuman-green) !important;
 }
 
 .plan-card .btn-outline-success:hover {
-  background-color: var(--greenhuman-green);
-  color: var(--white);
+  background-color: var(--greenhuman-green) !important;
+  color: var(--white) !important;
 }
 
 /* -----------------------------
@@ -187,11 +187,11 @@ body {
 }
 
 /* -----------------------------
-   FOOTER
+   FOOTER - FORCED GREEN
 ----------------------------- */
 .footer {
-  background: var(--greenhuman-green);
-  color: var(--white);
+  background-color: var(--greenhuman-green) !important; /* GreenHuman green */
+  color: #ffffff !important;
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -200,10 +200,13 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #ffffff !important;
 }
 
-.footer p, .footer .small, .footer .copy {
-  color: var(--white);
+.footer p, 
+.footer .small, 
+.footer .copy {
+  color: #ffffff !important;
 }
 
 .footer .small {
