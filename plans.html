@@ -4,31 +4,90 @@
   <meta charset="UTF-8">
   <title>GreenHuman Plans</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-light bg-white shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">← Back to Home</a>
   </div>
 </nav>
 
-<section class="plans-section">
+<!-- PLANS SECTION -->
+<section class="plans-section py-5">
   <div class="container">
-    <h2 class="section-title">Choose Your Plan</h2>
+    <h2 class="section-title text-center mb-5">Choose Your Plan</h2>
 
-    <div class="plan-detail">
-      <h4>PCOD Care Plan</h4>
-      <p>✔ Hormone-friendly meals</p>
-      <p>✔ Nutritionist designed</p>
-      <p>✔ Home delivery</p>
-      <strong>₹6,999 / 21 Days</strong>
+    <div class="row g-4">
+
+      <!-- Weight Loss Plan -->
+      <div class="col-md-4">
+        <div class="plan-card text-center p-4 shadow-sm">
+          <h4 class="mb-3">Weight Loss</h4>
+          <ul class="list-unstyled text-start mb-3">
+            <li>✔ Calorie-controlled meals</li>
+            <li>✔ Balanced nutrition</li>
+            <li>✔ Home delivery</li>
+          </ul>
+          <p class="price h5">₹4,999 / 21 Days</p>
+          <a href="#" class="btn btn-outline-success mt-2">Order Now</a>
+        </div>
+      </div>
+
+      <!-- PCOD Care Plan (Featured) -->
+      <div class="col-md-4">
+        <div class="plan-card featured text-center p-4 shadow-lg border-success">
+          <h4 class="mb-3">PCOD Care</h4>
+          <ul class="list-unstyled text-start mb-3">
+            <li>✔ Hormone-friendly meals</li>
+            <li>✔ Nutritionist designed</li>
+            <li>✔ Anti-inflammatory ingredients</li>
+            <li>✔ Home delivery</li>
+          </ul>
+          <p class="price h5">₹6,999 / 21 Days</p>
+          <a href="#" class="btn btn-success mt-2">Most Popular</a>
+        </div>
+      </div>
+
+      <!-- Diabetic Care Plan -->
+      <div class="col-md-4">
+        <div class="plan-card text-center p-4 shadow-sm">
+          <h4 class="mb-3">Diabetic Care</h4>
+          <ul class="list-unstyled text-start mb-3">
+            <li>✔ Low-GI meals</li>
+            <li>✔ Sugar control</li>
+            <li>✔ Home delivery</li>
+          </ul>
+          <p class="price h5">₹5,499 / 21 Days</p>
+          <a href="#" class="btn btn-outline-success mt-2">Order Now</a>
+        </div>
+      </div>
+
     </div>
-
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer class="footer text-center py-4 bg-light mt-5">
+  <h4>GreenHuman</h4>
+  <p>Real food. Real science. Real results.</p>
+  <p>📞 +91 73566 70157</p>
+  <p class="small">
+    Healthy eating should be simple, sustainable, and enjoyable — that’s our promise.
+  </p>
+  <p class="copy">© 2026 GreenHuman</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
