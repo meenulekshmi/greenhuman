@@ -2,85 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GreenHuman – Eat Smart</title>
+  <title>GreenHuman – Smart Nutrition</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">GreenHuman</a>
+    <a class="navbar-brand" href="index.html">GreenHuman</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- BANNER / HERO (NUTRIGATE STYLE) -->
+<!-- HERO (already perfect size) -->
 <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
   <div class="carousel-inner">
-
     <div class="carousel-item active">
-      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="d-block w-100">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="w-100">
       <div class="hero-overlay"></div>
       <div class="carousel-caption">
-        <h1>Eat Smart</h1>
-        <p>Scientifically balanced meals</p>
+        <h1>Eat Smart. Live Better.</h1>
+        <p>Nutrition designed for modern lifestyles</p>
       </div>
     </div>
-
     <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" class="d-block w-100">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" class="w-100">
       <div class="hero-overlay"></div>
       <div class="carousel-caption">
-        <h1>Live Strong</h1>
-        <p>PCOD & wellness focused nutrition</p>
+        <h1>Science Meets Taste</h1>
+        <p>Balanced meals delivered daily</p>
       </div>
     </div>
-
   </div>
-
-  <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
 </div>
 
-<!-- PLANS (NUTRIGATE STYLE) -->
-<section id="plans" class="plans-section">
+<!-- ABOUT -->
+<section id="about" class="content-section">
   <div class="container">
-    <h2 class="section-title">Our Plans</h2>
+    <h2 class="section-title">About GreenHuman</h2>
+    <p class="lead text-center">
+      GreenHuman is a nutrition-focused meal service inspired by science,
+      designed for real people, and crafted for long-term wellness.
+    </p>
+  </div>
+</section>
 
+<!-- PLANS PREVIEW -->
+<section class="plans-preview">
+  <div class="container">
+    <h2 class="section-title">Our Popular Plans</h2>
     <div class="row g-4">
 
       <div class="col-md-4">
         <div class="plan-card">
           <h4>Weight Loss</h4>
           <p class="price">₹4,999</p>
-          <span class="duration">14 Days</span>
-          <p class="desc">Calorie-controlled meals for fat loss</p>
-          <button class="btn btn-outline-success">Choose Plan</button>
+          <a href="plans.html" class="btn btn-outline-success">View Details</a>
         </div>
       </div>
 
@@ -88,9 +82,7 @@
         <div class="plan-card featured">
           <h4>PCOD Care</h4>
           <p class="price">₹6,999</p>
-          <span class="duration">21 Days</span>
-          <p class="desc">Hormone-friendly nutrition plan</p>
-          <button class="btn btn-light">Most Popular</button>
+          <a href="plans.html" class="btn btn-light">Most Popular</a>
         </div>
       </div>
 
@@ -98,9 +90,7 @@
         <div class="plan-card">
           <h4>Diabetic Care</h4>
           <p class="price">₹5,499</p>
-          <span class="duration">14 Days</span>
-          <p class="desc">Low-GI meals for sugar control</p>
-          <button class="btn btn-outline-success">Choose Plan</button>
+          <a href="plans.html" class="btn btn-outline-success">View Details</a>
         </div>
       </div>
 
@@ -108,39 +98,27 @@
   </div>
 </section>
 
-<!-- FEATURES -->
-<section id="features" class="features-section">
+<!-- BLOG -->
+<section id="blog" class="blog-section">
   <div class="container">
-    <h2 class="section-title">Why GreenHuman?</h2>
-
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <h4>Scientifically Balanced Meals</h4>
-        <p>Designed by nutrition experts.</p>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="https://share.google/3X0MbqZkpBJ9KLpNz" class="feature-img">
-      </div>
+    <h2 class="section-title">From Our Blog</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="blog-card">Smart Eating Habits</div></div>
+      <div class="col-md-4"><div class="blog-card">PCOD Nutrition Guide</div></div>
+      <div class="col-md-4"><div class="blog-card">Meal Planning Tips</div></div>
     </div>
-
-    <div class="row align-items-center flex-md-row-reverse">
-      <div class="col-md-6">
-        <h4>PCOD Focused Nutrition</h4>
-        <p>Supports hormonal balance naturally.</p>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="https://share.google/kY5n2eYjnPAVw6x5R" class="feature-img">
-      </div>
-    </div>
-
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer id="contact" class="footer">
   <h4>GreenHuman</h4>
+  <p>Real food. Real science. Real results.</p>
   <p>📞 +91 73566 70157</p>
-  <p>© 2026 GreenHuman</p>
+  <p class="small">
+    We believe healthy eating should be simple, sustainable, and enjoyable.
+  </p>
+  <p class="copy">© 2026 GreenHuman</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
