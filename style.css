@@ -1,25 +1,51 @@
+/* --------------------
+   GLOBAL
+-------------------- */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  margin: 0;
   padding-top: 70px;
+  color: #1f2933;
+  background: #ffffff;
 }
 
-/* NAVBAR */
-.navbar {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+a {
+  text-decoration: none;
 }
+
+/* --------------------
+   NAVBAR
+-------------------- */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
 .navbar-brand {
   font-weight: 700;
   color: #1e7e34;
+  font-size: 22px;
 }
 
-/* HERO (SMALL LIKE NUTRIGATE) */
+.nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #1e7e34;
+}
+
+/* --------------------
+   HERO / BANNER
+-------------------- */
 .hero-carousel img {
-  height: 60vh;
+  height: 60vh;               /* Nutrigrate-like height */
   object-fit: cover;
 }
 
@@ -32,70 +58,139 @@ body {
 .carousel-caption {
   bottom: 30%;
 }
+
 .carousel-caption h1 {
   font-size: 2.8rem;
   font-weight: 700;
 }
 
-/* PLANS */
-.plans-section {
+.carousel-caption p {
+  font-size: 1.1rem;
+}
+
+/* --------------------
+   SECTIONS
+-------------------- */
+.section-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.content-section,
+.plans-preview,
+.plans-section,
+.features-section,
+.blog-section {
   padding: 80px 0;
+}
+
+/* --------------------
+   PLANS (NUTRIGATE STYLE)
+-------------------- */
+.plans-preview,
+.plans-section {
   background: #f6fbf6;
 }
 
 .plan-card {
-  background: white;
+  background: #ffffff;
   padding: 35px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+}
+
+.plan-card h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .plan-card .price {
   font-size: 28px;
   font-weight: 700;
   color: #1e7e34;
-}
-
-.plan-card .duration {
-  font-size: 14px;
-  color: gray;
+  margin-bottom: 15px;
 }
 
 .plan-card.featured {
   background: #1e7e34;
-  color: white;
-  transform: scale(1.05);
+  color: #ffffff;
 }
 
 .plan-card.featured .price {
-  color: #fff;
+  color: #ffffff;
 }
 
-/* FEATURES */
-.features-section {
-  padding: 80px 0;
-}
-
+/* --------------------
+   FEATURES
+-------------------- */
 .feature-img {
   max-width: 320px;
+  width: 100%;
   border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* FOOTER */
+/* --------------------
+   BLOG
+-------------------- */
+.blog-section {
+  background: #ffffff;
+}
+
+.blog-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
 .footer {
   background: #145a32;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
-/* MOBILE */
+.footer h4 {
+  font-weight: 600;
+}
+
+.footer p {
+  max-width: 650px;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.footer .copy {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+/* --------------------
+   MOBILE RESPONSIVE
+-------------------- */
 @media (max-width: 768px) {
   .hero-carousel img {
     height: 45vh;
   }
+
   .carousel-caption h1 {
     font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
   }
 }
