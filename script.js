@@ -1,12 +1,12 @@
-// Simple fade-in on scroll
-const cards = document.querySelectorAll('.card');
+// subtle scroll animation
+const items = document.querySelectorAll('.feature-item');
 
 window.addEventListener('scroll', () => {
-  cards.forEach(card => {
-    const top = card.getBoundingClientRect().top;
-    if (top < window.innerHeight - 50) {
-      card.style.opacity = 1;
-      card.style.transform = 'translateY(0)';
+  items.forEach(item => {
+    const pos = item.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 100) {
+      item.style.opacity = 1;
+      item.style.transform = 'translateY(0)';
     }
   });
 });
