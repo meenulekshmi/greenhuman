@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>GreenHuman – Eat Smart, Live Strong</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>GreenHuman – Eat Smart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Google Font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -30,53 +29,78 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
         <li class="nav-item"><a class="nav-link" href="#features">Why Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="container hero-content">
-    <h1>Eat Smart.<br>Live Strong.</h1>
-    <p>Scientifically designed meals for a healthier lifestyle</p>
-    <a href="#plans" class="btn btn-success">View Plans</a>
+<!-- BANNER / HERO (NUTRIGATE STYLE) -->
+<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="d-block w-100">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption">
+        <h1>Eat Smart</h1>
+        <p>Scientifically balanced meals</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" class="d-block w-100">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption">
+        <h1>Live Strong</h1>
+        <p>PCOD & wellness focused nutrition</p>
+      </div>
+    </div>
+
   </div>
 
-  <!-- floating food images -->
-  <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
-       class="float-img img1">
-  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
-       class="float-img img2">
-</section>
+  <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
 
-<!-- PLANS -->
+<!-- PLANS (NUTRIGATE STYLE) -->
 <section id="plans" class="plans-section">
   <div class="container">
     <h2 class="section-title">Our Plans</h2>
-    <div class="row">
+
+    <div class="row g-4">
 
       <div class="col-md-4">
         <div class="plan-card">
           <h4>Weight Loss</h4>
-          <p>Balanced calorie meals for fat loss</p>
+          <p class="price">₹4,999</p>
+          <span class="duration">14 Days</span>
+          <p class="desc">Calorie-controlled meals for fat loss</p>
+          <button class="btn btn-outline-success">Choose Plan</button>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="plan-card highlight">
+        <div class="plan-card featured">
           <h4>PCOD Care</h4>
-          <p>Hormone-friendly nutrition plans</p>
+          <p class="price">₹6,999</p>
+          <span class="duration">21 Days</span>
+          <p class="desc">Hormone-friendly nutrition plan</p>
+          <button class="btn btn-light">Most Popular</button>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="plan-card">
-          <h4>Diabetic Friendly</h4>
-          <p>Low-GI meals for sugar control</p>
+          <h4>Diabetic Care</h4>
+          <p class="price">₹5,499</p>
+          <span class="duration">14 Days</span>
+          <p class="desc">Low-GI meals for sugar control</p>
+          <button class="btn btn-outline-success">Choose Plan</button>
         </div>
       </div>
 
@@ -92,7 +116,7 @@
     <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <h4>Scientifically Balanced Meals</h4>
-        <p>Designed with nutrition experts for real results.</p>
+        <p>Designed by nutrition experts.</p>
       </div>
       <div class="col-md-6 text-center">
         <img src="https://share.google/3X0MbqZkpBJ9KLpNz" class="feature-img">
@@ -101,8 +125,8 @@
 
     <div class="row align-items-center flex-md-row-reverse">
       <div class="col-md-6">
-        <h4>PCOD & Wellness Focus</h4>
-        <p>Reduces inflammation & supports hormonal balance.</p>
+        <h4>PCOD Focused Nutrition</h4>
+        <p>Supports hormonal balance naturally.</p>
       </div>
       <div class="col-md-6 text-center">
         <img src="https://share.google/kY5n2eYjnPAVw6x5R" class="feature-img">
@@ -112,47 +136,11 @@
   </div>
 </section>
 
-<!-- BLOG -->
-<section id="blog" class="blog-section">
-  <div class="container">
-    <h2 class="section-title">From Our Blog</h2>
-    <div class="row">
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
-          <h5>Healthy Eating Made Easy</h5>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2c6e5">
-          <h5>PCOD & Nutrition</h5>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
-          <h5>Meal Planning Tips</h5>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer id="contact" class="footer">
   <h4>GreenHuman</h4>
   <p>📞 +91 73566 70157</p>
-  <div class="socials">
-    <i class="bi bi-instagram"></i>
-    <i class="bi bi-whatsapp"></i>
-    <i class="bi bi-youtube"></i>
-  </div>
-  <p class="copy">© 2026 GreenHuman</p>
+  <p>© 2026 GreenHuman</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
