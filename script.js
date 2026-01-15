@@ -1,17 +1,12 @@
-const elements = document.querySelectorAll('.card, .plan');
+// Simple fade-in on scroll
+const cards = document.querySelectorAll('.card');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      card.style.opacity = 1;
+      card.style.transform = 'translateY(0)';
     }
   });
-});
-
-elements.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(40px)';
-  el.style.transition = '0.6s ease';
-  observer.observe(el);
 });
