@@ -1,63 +1,193 @@
-/* Hero carousel overlay fade + floating effect */
-.carousel-item img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  animation: floatHero 6s ease-in-out infinite;
+/* -----------------------
+   GENERAL RESET & BODY
+------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9fdf9;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* -----------------------
+   HERO SECTION
+------------------------ */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: floatHero 6s ease-in-out infinite;
 }
 
 @keyframes floatHero {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
-.carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35);
-  z-index: 1;
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35); /* fade overlay */
+    z-index: 1;
 }
 
-.carousel-caption { z-index: 2; }
-.carousel-caption h1, .carousel-caption p {
-  color: #fff;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+    text-align: center;
 }
 
-/* Footer premium */
-.footer {
-  background: linear-gradient(135deg, #0f3d21, #145a32);
-  padding: 40px 0;
-}
-.footer h4 {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.footer .social-icons a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-.footer .social-icons a:hover {
-  transform: scale(1.2);
+.hero-text h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
 }
 
-/* Features fade-in on scroll */
+.hero-text p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+/* -----------------------
+   FEATURES SECTION
+------------------------ */
+.features-section {
+    padding: 80px 20px;
+    background: #fff;
+}
+
 .feature-item {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
 }
 
-/* Responsive */
-@media (max-width:768px) {
-  .feature-item.reverse { flex-direction: column !important; }
-  .carousel-caption h1 { font-size: 1.8rem; }
-  .carousel-caption p { font-size: 1rem; }
-  .feature-img img { max-width: 100%; margin-bottom: 20px; }
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-text h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    font-size: 1rem;
+}
+
+/* -----------------------
+   BLOG SECTION
+------------------------ */
+.blog-section {
+    padding: 80px 20px;
+    background: #f4f7f9;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card h5 {
+    font-size: 1.2rem;
+    margin: 15px;
+}
+
+.blog-card p {
+    font-size: 0.95rem;
+    margin: 0 15px 15px 15px;
+}
+
+/* -----------------------
+   FOOTER
+------------------------ */
+.footer {
+    background: linear-gradient(135deg, #0f3d21, #145a32);
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* -----------------------
+   RESPONSIVE
+------------------------ */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .feature-item.reverse {
+        flex-direction: column !important;
+    }
+    .feature-item img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .blog-card img {
+        height: 180px;
+    }
 }
