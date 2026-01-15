@@ -17,42 +17,24 @@ body {
   color: #1e7e34;
 }
 
-/* HERO */
-.hero {
-  position: relative;
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061') center/cover;
-  display: flex;
-  align-items: center;
+/* HERO (SMALL LIKE NUTRIGATE) */
+.hero-carousel img {
+  height: 60vh;
+  object-fit: cover;
 }
-.overlay {
+
+.hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.45);
 }
-.hero-content {
-  position: relative;
-  color: white;
-  max-width: 600px;
+
+.carousel-caption {
+  bottom: 30%;
 }
-.hero h1 {
-  font-size: 3rem;
+.carousel-caption h1 {
+  font-size: 2.8rem;
   font-weight: 700;
-}
-
-/* FLOATING IMAGES */
-.float-img {
-  position: absolute;
-  width: 180px;
-  animation: float 6s ease-in-out infinite;
-}
-.img1 { right: 10%; top: 20%; }
-.img2 { right: 20%; bottom: 15%; animation-delay: 2s; }
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
 }
 
 /* PLANS */
@@ -60,45 +42,44 @@ body {
   padding: 80px 0;
   background: #f6fbf6;
 }
+
 .plan-card {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
+  padding: 35px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
 }
-.plan-card.highlight {
+
+.plan-card .price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e7e34;
+}
+
+.plan-card .duration {
+  font-size: 14px;
+  color: gray;
+}
+
+.plan-card.featured {
   background: #1e7e34;
   color: white;
+  transform: scale(1.05);
+}
+
+.plan-card.featured .price {
+  color: #fff;
 }
 
 /* FEATURES */
 .features-section {
   padding: 80px 0;
 }
+
 .feature-img {
   max-width: 320px;
   border-radius: 15px;
-}
-
-/* BLOG */
-.blog-section {
-  background: #f6fbf6;
-  padding: 80px 0;
-}
-.blog-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,.1);
-}
-.blog-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-.blog-card h5 {
-  padding: 15px;
 }
 
 /* FOOTER */
@@ -108,7 +89,13 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
-.socials i {
-  font-size: 22px;
-  margin: 0 10px;
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-carousel img {
+    height: 45vh;
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
 }
