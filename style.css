@@ -1,90 +1,114 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #f9fdf9;
-  color: #1f2933;
+  margin: 0;
+  padding-top: 70px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #1e7e34;
 }
 
 /* HERO */
 .hero {
   position: relative;
-  height: 70vh;
-  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover no-repeat;
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061') center/cover;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
-.hero-overlay {
+.overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.45);
 }
-
 .hero-content {
   position: relative;
-  color: #fff;
-  text-align: center;
+  color: white;
+  max-width: 600px;
 }
-
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
+/* FLOATING IMAGES */
+.float-img {
+  position: absolute;
+  width: 180px;
+  animation: float 6s ease-in-out infinite;
+}
+.img1 { right: 10%; top: 20%; }
+.img2 { right: 20%; bottom: 15%; animation-delay: 2s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* PLANS */
+.plans-section {
+  padding: 80px 0;
+  background: #f6fbf6;
+}
+.plan-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+.plan-card.highlight {
+  background: #1e7e34;
+  color: white;
+}
+
 /* FEATURES */
-.features {
-  padding: 60px 0;
+.features-section {
+  padding: 80px 0;
 }
-
-.features img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.reverse {
-  margin-top: 60px;
-  flex-direction: row-reverse;
+.feature-img {
+  max-width: 320px;
+  border-radius: 15px;
 }
 
 /* BLOG */
-.blog {
-  padding: 60px 0;
+.blog-section {
+  background: #f6fbf6;
+  padding: 80px 0;
 }
-
 .blog-card {
-  background: #fff;
-  border-radius: 12px;
+  background: white;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
 }
-
 .blog-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
-
 .blog-card h5 {
   padding: 15px;
 }
 
 /* FOOTER */
 .footer {
-  background: #0f3d2e;
-  color: #fff;
+  background: #145a32;
+  color: white;
   text-align: center;
   padding: 40px 20px;
 }
-
-.footer .socials i {
+.socials i {
+  font-size: 22px;
   margin: 0 10px;
-  font-size: 1.3rem;
 }
