@@ -5,21 +5,30 @@
   <title>GreenHuman – Smart Nutrition</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">GreenHuman</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -31,9 +40,10 @@
   </div>
 </nav>
 
-<!-- HERO (already perfect size) -->
+<!-- HERO / BANNER -->
 <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
   <div class="carousel-inner">
+
     <div class="carousel-item active">
       <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" class="w-100">
       <div class="hero-overlay"></div>
@@ -42,6 +52,7 @@
         <p>Nutrition designed for modern lifestyles</p>
       </div>
     </div>
+
     <div class="carousel-item">
       <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" class="w-100">
       <div class="hero-overlay"></div>
@@ -50,16 +61,17 @@
         <p>Balanced meals delivered daily</p>
       </div>
     </div>
+
   </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about" class="content-section">
   <div class="container">
-    <h2 class="section-title">About GreenHuman</h2>
+    <h2 class="section-title text-center">About GreenHuman</h2>
     <p class="lead text-center">
-      GreenHuman is a nutrition-focused meal service inspired by science,
-      designed for real people, and crafted for long-term wellness.
+      GreenHuman is a science-backed nutrition service crafted for long-term wellness,
+      inspired by real lifestyles and real health goals.
     </p>
   </div>
 </section>
@@ -67,8 +79,9 @@
 <!-- PLANS PREVIEW -->
 <section class="plans-preview">
   <div class="container">
-    <h2 class="section-title">Our Popular Plans</h2>
-    <div class="row g-4">
+    <h2 class="section-title text-center">Our Popular Plans</h2>
+
+    <div class="row g-4 mt-4">
 
       <div class="col-md-4">
         <div class="plan-card">
@@ -101,8 +114,9 @@
 <!-- BLOG -->
 <section id="blog" class="blog-section">
   <div class="container">
-    <h2 class="section-title">From Our Blog</h2>
-    <div class="row g-4">
+    <h2 class="section-title text-center">From Our Blog</h2>
+
+    <div class="row g-4 mt-4">
       <div class="col-md-4"><div class="blog-card">Smart Eating Habits</div></div>
       <div class="col-md-4"><div class="blog-card">PCOD Nutrition Guide</div></div>
       <div class="col-md-4"><div class="blog-card">Meal Planning Tips</div></div>
@@ -111,17 +125,19 @@
 </section>
 
 <!-- FOOTER -->
-<footer id="contact" class="footer">
+<footer id="contact" class="footer text-center">
   <h4>GreenHuman</h4>
   <p>Real food. Real science. Real results.</p>
   <p>📞 +91 73566 70157</p>
   <p class="small">
-    We believe healthy eating should be simple, sustainable, and enjoyable.
+    Healthy eating should be simple, sustainable, and enjoyable — that’s our promise.
   </p>
   <p class="copy">© 2026 GreenHuman</p>
 </footer>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
