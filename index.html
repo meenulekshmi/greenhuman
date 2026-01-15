@@ -1,95 +1,162 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GreenHuman – Smart Nutrition</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>GreenHuman – Eat Smart, Live Strong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">GreenHuman</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <!-- HERO -->
-<header class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Eat Smart. Live Strong.</h1>
-    <p>Scientifically balanced meals for modern wellness</p>
-  </div>
-</header>
-
-<!-- FEATURES -->
-<section class="features container">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h3>Scientifically Balanced Meals</h3>
-      <p>Designed with nutrition experts for energy and hormonal balance.</p>
-    </div>
-    <div class="col-md-6">
-      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="">
-    </div>
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <h1>Eat Smart.<br>Live Strong.</h1>
+    <p>Scientifically designed meals for a healthier lifestyle</p>
+    <a href="#plans" class="btn btn-success">View Plans</a>
   </div>
 
-  <div class="row align-items-center reverse">
-    <div class="col-md-6">
-      <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="">
-    </div>
-    <div class="col-md-6">
-      <h3>PCOD-Friendly Nutrition</h3>
-      <p>Anti-inflammatory meals that support hormonal wellness.</p>
+  <!-- floating food images -->
+  <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+       class="float-img img1">
+  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+       class="float-img img2">
+</section>
+
+<!-- PLANS -->
+<section id="plans" class="plans-section">
+  <div class="container">
+    <h2 class="section-title">Our Plans</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="plan-card">
+          <h4>Weight Loss</h4>
+          <p>Balanced calorie meals for fat loss</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="plan-card highlight">
+          <h4>PCOD Care</h4>
+          <p>Hormone-friendly nutrition plans</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="plan-card">
+          <h4>Diabetic Friendly</h4>
+          <p>Low-GI meals for sugar control</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- FEATURES -->
+<section id="features" class="features-section">
+  <div class="container">
+    <h2 class="section-title">Why GreenHuman?</h2>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h4>Scientifically Balanced Meals</h4>
+        <p>Designed with nutrition experts for real results.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://share.google/3X0MbqZkpBJ9KLpNz" class="feature-img">
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h4>PCOD & Wellness Focus</h4>
+        <p>Reduces inflammation & supports hormonal balance.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://share.google/kY5n2eYjnPAVw6x5R" class="feature-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- BLOG -->
-<section class="blog container">
-  <h2 class="text-center mb-4">From Our Blog</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
-        <h5>Effortless Weight Loss</h5>
-      </div>
-    </div>
+<section id="blog" class="blog-section">
+  <div class="container">
+    <h2 class="section-title">From Our Blog</h2>
+    <div class="row">
 
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2c6e5">
-        <h5>PCOD & Nutrition</h5>
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+          <h5>Healthy Eating Made Easy</h5>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
-        <h5>Healthy Busy Life</h5>
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2c6e5">
+          <h5>PCOD & Nutrition</h5>
+        </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+          <h5>Meal Planning Tips</h5>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer id="contact" class="footer">
   <h4>GreenHuman</h4>
-  <p>Eat Smart. Live Strong.</p>
+  <p>📞 +91 73566 70157</p>
   <div class="socials">
     <i class="bi bi-instagram"></i>
     <i class="bi bi-whatsapp"></i>
     <i class="bi bi-youtube"></i>
   </div>
-  <p class="copyright">© 2026 GreenHuman</p>
+  <p class="copy">© 2026 GreenHuman</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
