@@ -2,73 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GreenHuman Lunch Plan</title>
+  <title>GreenHuman Lunch Plans</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-light bg-white fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold text-success" href="index.html">
-      GreenHuman
-    </a>
+    <a class="navbar-brand" href="index.html">← Back to Home</a>
   </div>
 </nav>
 
-<!-- HERO BANNER -->
-<section class="plan-hero">
-  <div class="overlay"></div>
-  <div class="container">
-    <h1>Healthy Lunch Bowls</h1>
-    <p>
-      Delicious and nutritious lunch bowls packed with proteins,
-      fibers and essential nutrients
-    </p>
-
-    <div class="plan-tags">
-      <span>☀ Lunch</span>
-      <span>✔ 1 Lunch per day</span>
-      <span>🕒 11:30 AM – 3:30 PM</span>
-      <span>✔ 6 Dish Options</span>
-      <span>⭐ Featured Plan</span>
+<!-- HERO SECTION -->
+<section class="plan-hero text-white text-center d-flex align-items-center justify-content-center" style="height:300px; background-image:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061'); background-size:cover; background-position:center;">
+  <div class="hero-overlay" style="background: rgba(0,0,0,0.35); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div class="hero-content" style="position:relative; z-index:1;">
+    <h1 class="display-5 fw-bold">Healthy Lunch Bowls</h1>
+    <p class="lead">Delicious and nutritious lunch bowls packed with proteins, fibers, and essential nutrients</p>
+    <div class="plan-tags mt-3">
+      <span class="badge bg-light text-dark me-2">🌞 Lunch</span>
+      <span class="badge bg-light text-dark me-2">1 Lunch per day</span>
+      <span class="badge bg-light text-dark me-2">Delivery: 11:30 AM - 3:30 PM</span>
+      <span class="badge bg-light text-dark me-2">6 Dish Options</span>
+      <span class="badge bg-light text-dark me-2">Free Daily Delivery</span>
+      <span class="badge bg-warning text-dark">★ Featured Plan</span>
     </div>
   </div>
 </section>
 
-<!-- INCLUDED SECTION -->
-<section class="included-section">
+<!-- INCLUDED MEALS -->
+<section class="included-section py-5">
   <div class="container">
-    <h2>What's Included in This Plan</h2>
-    <p class="text-muted">
-      1 Lunch per day — Choose from our rotating menu of dishes
-    </p>
+    <h2 class="section-title text-center mb-4">What's Included in This Plan</h2>
 
-    <div class="meal-card">
-      <img src="https://images.unsplash.com/photo-1604908177522-3c7efc4b1cbb" alt="Meal">
-      <h4>Jeera Rice Protein Bowl</h4>
-      <p>
-        A fragrant cumin-flavored rice bowl packed with protein
-        and mixed vegetables.
-      </p>
-      <span class="day-pill">Monday</span>
+    <div class="row g-4">
+
+      <!-- Monday -->
+      <div class="col-md-4">
+        <div class="meal-card p-3 shadow-sm rounded text-center">
+          <img src="images/jeera-rice.jpg" alt="Jeera Rice Protein Bowl" class="img-fluid rounded-circle mb-3" style="width:120px; height:120px;">
+          <h5 class="fw-bold">Jeera Rice Protein Bowl</h5>
+          <p>A fragrant cumin-flavored rice bowl packed with protein and mixed vegetables.</p>
+          <span class="day-pill badge bg-success text-white">Monday</span>
+        </div>
+      </div>
+
+      <!-- Tuesday -->
+      <div class="col-md-4">
+        <div class="meal-card p-3 shadow-sm rounded text-center">
+          <img src="images/meal-tue.jpg" alt="Quinoa Veg Bowl" class="img-fluid rounded-circle mb-3" style="width:120px; height:120px;">
+          <h5 class="fw-bold">Quinoa Veg Bowl</h5>
+          <p>Protein-rich quinoa with sautéed veggies and light seasoning.</p>
+          <span class="day-pill badge bg-success text-white">Tuesday</span>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="col-md-4">
+        <div class="meal-card p-3 shadow-sm rounded text-center">
+          <img src="images/meal-wed.jpg" alt="Chickpea Salad Bowl" class="img-fluid rounded-circle mb-3" style="width:120px; height:120px;">
+          <h5 class="fw-bold">Chickpea Salad Bowl</h5>
+          <p>Fresh chickpeas with greens, herbs, and tangy dressing.</p>
+          <span class="day-pill badge bg-success text-white">Wednesday</span>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div class="col-md-4">
+        <div class="meal-card p-3 shadow-sm rounded text-center">
+          <img src="images/meal-thu.jpg" alt="Brown Rice Veg Bowl" class="img-fluid rounded-circle mb-3" style="width:120px; height:120px;">
+          <h5 class="fw-bold">Brown Rice Veg Bowl</h5>
+          <p>Whole-grain brown rice with seasonal veggies and light spices.</p>
+          <span class="day-pill badge bg-success text-white">Thursday</span>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="col-md-4">
+        <div class="meal-card p-3 shadow-sm rounded text-center">
+          <img src="images/meal-fri.jpg" alt="Paneer Salad Bowl" class="img-fluid rounded-circle mb-3" style="width:120px; height:120px;">
+          <h5 class="fw-bold">Paneer Salad Bowl</h5>
+          <p>Protein-packed paneer with fresh greens and herbs.</p>
+          <span class="day-pill badge bg-success text-white">Friday</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer bg-success text-white py-4 mt-5">
   <div class="container text-center">
-    <h4>GreenHuman</h4>
-    <p>Eat clean. Live balanced. Stay strong.</p>
+    <h4 class="fw-bold">GreenHuman</h4>
+    <p>Real food. Real science. Real results.</p>
     <p>📞 +91 73566 70157</p>
-    <p class="small">© 2026 GreenHuman. All rights reserved.</p>
+    <p class="small">We believe healthy eating should be simple, sustainable, and enjoyable.</p>
+    <p class="copy">© 2026 GreenHuman</p>
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
