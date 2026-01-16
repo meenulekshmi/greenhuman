@@ -1,264 +1,172 @@
+/* -----------------------
+   GENERAL RESET & BODY
+------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f9fdf9;
-  color: #1f2933;
+    background-color: #f9fdf9;
+    color: #1f2933;
+    line-height: 1.6;
 }
 
-/* TITLES */
-.section-title {
-  text-align: center;
-  font-weight: 700;
-  margin: 40px 0;
-  color: #1f5d2b;
+/* -----------------------
+   NAVBAR
+------------------------ */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    z-index: 1000;
 }
 
-/* PLANS PREVIEW */
-.plan-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.navbar .navbar-brand {
+    font-weight: 700;
+    color: #1e4620;
 }
 
-.plan-card {
-  text-decoration: none;
-  color: inherit;
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
-}
-
-.plan-card:hover {
-  transform: translateY(-6px);
-}
-
-.plan-banner {
-  padding: 25px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.plan-banner.green { background: #1f5d2b; }
-.plan-banner.dark { background: #144022; }
-.plan-banner.combo { background: #2e7d32; }
-
-.plan-body {
-  padding: 20px;
-}
-
-.price {
-  color: #1f5d2b;
-  font-weight: 700;
-}
-
-/* HERO */
+/* -----------------------
+   HERO / GREEN BANNER (1:1)
+------------------------ */
 .plan-hero {
-  background: linear-gradient(135deg, #1f5d2b, #2e7d32);
-  color: white;
-  padding: 60px 0;
-}
-
-.hero-tags span {
-  display: inline-block;
-  background: rgba(255,255,255,0.15);
-  padding: 8px 14px;
-  border-radius: 20px;
-  margin: 6px;
-}
-
-/* INCLUDED */
-.included {
-  padding: 50px 0;
-}
-
-.meal-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-/* PRICING */
-.pricing {
-  background: #f0f7f1;
-  padding: 50px 0;
-}
-
-.price-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* FOOTER */
-.footer {
-  background: #1f5d2b;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 40px;
-}
-/* ---------- LUNCH PLAN PAGE ---------- */
-
-.plan-header {
-  padding: 120px 0 60px;
-  background: #f4fbf6;
-}
-
-.plan-header h1 {
-  font-weight: 700;
-  color: #1b5e20;
-}
-
-.plan-header .tagline {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.plan-main {
-  padding: 60px 0;
-}
-
-.plan-box {
-  background: #fff;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-.plan-box h2 {
-  font-size: 2.5rem;
-  color: #1b5e20;
-  font-weight: 700;
-}
-
-.plan-box h2 span {
-  font-size: 1rem;
-  color: #666;
-}
-
-.plan-subtitle {
-  margin: 10px 0 25px;
-  color: #777;
-}
-
-.plan-features {
-  list-style: none;
-  padding: 0;
-}
-
-.plan-features li {
-  padding: 10px 0;
-  font-size: 1rem;
-}
-
-.plan-cta {
-  margin-top: 30px;
-}
-
-.plan-cta .btn {
-  padding: 12px 32px;
-  border-radius: 30px;
-}
-
-/* WHY SECTION */
-.why-section {
-  background: #f9fdf9;
-  padding: 70px 0;
-}
-
-.why-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 14px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.why-card:hover {
-  transform: translateY(-8px);
-}
-
-.why-card h5 {
-  color: #1b5e20;
-  font-weight: 600;
-}
-/* ===== LUNCH PLAN PAGE ===== */
-
-.plan-hero {
-  background: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd') center/cover no-repeat;
-  padding: 140px 20px 80px;
-  color: #fff;
-  position: relative;
-}
-
-.plan-hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(30, 90, 50, 0.85),
-    rgba(30, 90, 50, 0.85)
-  );
-}
-
-.plan-hero .container {
-  position: relative;
-  z-index: 2;
+    width: 100%;
+    aspect-ratio: 1/1; /* 1:1 ratio */
+    background: linear-gradient(135deg, #1e4620, #2b6230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .plan-hero h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
-.plan-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
+.plan-hero p {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
 }
 
-.plan-tags span {
-  background: rgba(255,255,255,0.15);
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-/* INCLUDED */
-.included-section {
-  padding: 60px 20px;
-  background: #f9fdf9;
+/* -----------------------
+   INCLUDED MEALS / CARD STYLING
+------------------------ */
+.included-section .section-title {
+    color: #1e4620;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 .meal-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  max-width: 320px;
-  margin: 40px auto 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
 }
 
 .meal-card img {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
 
-.day-pill {
-  display: inline-block;
-  margin-top: 10px;
-  background: #1f7a4a;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+.meal-card h5 {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
 }
 
+.meal-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
 
+.meal-card .day-pill {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50px;
+}
+
+/* Hover effect */
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* Animation delays for meal cards */
+.animate-pop {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popIn 0.7s forwards;
+}
+
+.delay1 { animation-delay: 0.2s; }
+.delay2 { animation-delay: 0.4s; }
+.delay3 { animation-delay: 0.6s; }
+.delay4 { animation-delay: 0.8s; }
+.delay5 { animation-delay: 1s; }
+
+/* -----------------------
+   FOOTER
+------------------------ */
+.footer {
+    background-color: #1e4620;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer h4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* -----------------------
+   ANIMATIONS
+------------------------ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------
+   RESPONSIVE
+------------------------ */
+@media (max-width: 991px) {
+    .plan-hero h1 {
+        font-size: 2rem;
+    }
+    .plan-hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .meal-card {
+        padding: 0.8rem;
+    }
+}
