@@ -1,100 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GreenHuman – Lunch Plan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF‑8">
+  <title>GreenHuman | Lunch Plan</title>
+  <meta name="viewport" content="width=device-width, initial‑scale=1">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Your existing CSS (with animations) -->
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg navbar‑light bg‑white fixed‑top shadow">
   <div class="container">
-    <a class="navbar-brand" href="index.html">← Back to Home</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <a class="navbar‑brand fw‑bold" href="index.html">← Back to Home</a>
   </div>
 </nav>
 
-<!-- HERO BANNER -->
-<section class="plan-hero">
-  <div class="container text-center">
-    <h1>Healthy Lunch Bowls</h1>
-    <p>Nutrition designed for your modern lifestyle</p>
-    <!-- BADGES / BUTTONS -->
-    <div class="mt-3 d-flex justify-content-center flex-wrap gap-2">
-      <span class="badge bg-light text-dark">Lunch per Day</span>
-      <span class="badge bg-light text-dark">Delivery: 11AM-2PM</span>
-      <span class="badge bg-light text-dark">5 Dishes Included</span>
-      <span class="badge bg-light text-dark">Customizable</span>
+<!-- BANNER (Nutrigate style) -->
+<section class="plan‑hero text‑center text‑white" style="background: linear-gradient(135deg, #2f855a, #68d391); padding: 4rem 0 3rem; margin-top: 70px;">
+  <div class="container">
+    <h1 class="display‑5 fw‑bold animate‑fade">Healthy Lunch Bowls</h1>
+    <p class="lead animate‑fade delay1">Delicious and nutritious lunch bowls packed with proteins, fibers and essential nutrients</p>
+
+    <!-- Badges -->
+    <div class="mt‑3 d‑flex justify-content‑center flex-wrap gap‑2 animate‑fade delay2">
+      <span class="badge bg‑light text‑dark">☀️ Lunch</span>
+      <span class="badge bg‑light text‑dark">1 Lunch per day</span>
+      <span class="badge bg‑light text‑dark">Delivery: 11:30 AM – 3:30 PM</span>
+      <span class="badge bg‑light text‑dark">6 Dish Options</span>
+      <span class="badge bg‑light text‑dark">Free Daily Delivery</span>
+      <span class="badge bg‑warning text‑dark">★ Featured Plan</span>
     </div>
   </div>
 </section>
 
-<!-- MONDAY TO FRIDAY MEALS -->
-<section class="included-section py-5">
+<!-- MONDAY → SATURDAY MEALS -->
+<section class="included‑section py‑5">
   <div class="container">
-    <h2 class="section-title text-center mb-4">Monday to Friday Meals</h2>
-    <div class="row g-4">
+    <h2 class="section‑title text‑center mb‑4 animate‑fade">What's Included in This Plan</h2>
+    <div class="row g‑4">
 
       <!-- MONDAY -->
-      <div class="col-md-4">
-        <div class="meal-card animate-pop delay1">
-          <span class="day-pill bg-success text-white">Monday</span>
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Monday Meal">
-          <h5>Jeera Rice with Dal</h5>
-          <p>Balanced Indian meal with spices and protein-rich dal.</p>
+      <div class="col-md‑4 animate‑pop delay1">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Monday</span>
+          <img src="https://images.pexels.com/photos/1640777/pexels‑photo‑1640777.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Jeera Rice Protein Bowl" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Jeera Rice Protein Bowl</h5>
+            <p>A fragrant cumin‑flavored rice bowl packed with protein and mixed vegetables.</p>
+          </div>
         </div>
       </div>
 
       <!-- TUESDAY -->
-      <div class="col-md-4">
-        <div class="meal-card animate-pop delay2">
-          <span class="day-pill bg-success text-white">Tuesday</span>
-          <img src="https://images.unsplash.com/photo-1617196034983-59d6c39d1f6b" alt="Tuesday Meal">
-          <h5>Grilled Chicken Salad</h5>
-          <p>Light and protein-packed salad with greens and vinaigrette.</p>
+      <div class="col-md‑4 animate‑pop delay2">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Tuesday</span>
+          <img src="https://images.pexels.com/photos/1640770/pexels‑photo‑1640770.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Chicken Mediterranean Salad" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Chicken Mediterranean Salad</h5>
+            <p>Grilled chicken tossed with fresh veggies and Mediterranean herbs for a light meal.</p>
+          </div>
         </div>
       </div>
 
       <!-- WEDNESDAY -->
-      <div class="col-md-4">
-        <div class="meal-card animate-pop delay3">
-          <span class="day-pill bg-success text-white">Wednesday</span>
-          <img src="https://images.unsplash.com/photo-1598514983672-ef5f3da2c2d6" alt="Wednesday Meal">
-          <h5>Paneer Stir Fry</h5>
-          <p>Healthy paneer with colorful veggies and light seasoning.</p>
+      <div class="col-md‑4 animate‑pop delay3">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Wednesday</span>
+          <img src="https://images.pexels.com/photos/461198/pexels‑photo‑461198.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Mashed Sweet Potato & Beef Wedges" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Mashed Sweet Potato & Beef Wedges</h5>
+            <p>Slow‑cooked beef with creamy mashed sweet potatoes and vegetables.</p>
+          </div>
         </div>
       </div>
 
       <!-- THURSDAY -->
-      <div class="col-md-4">
-        <div class="meal-card animate-pop delay4">
-          <span class="day-pill bg-success text-white">Thursday</span>
-          <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb35" alt="Thursday Meal">
-          <h5>Quinoa Veg Bowl</h5>
-          <p>High protein quinoa with roasted vegetables and herbs.</p>
+      <div class="col-md‑4 animate‑pop delay4">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Thursday</span>
+          <img src="https://images.pexels.com/photos/1640774/pexels‑photo‑1640774.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Chicken Millet Noodles" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Chicken Millet Noodles</h5>
+            <p>Stir‑fried millet noodles with tender chicken and seasonal vegetables.</p>
+          </div>
         </div>
       </div>
 
       <!-- FRIDAY -->
-      <div class="col-md-4">
-        <div class="meal-card animate-pop delay5">
-          <span class="day-pill bg-success text-white">Friday</span>
-          <img src="https://images.unsplash.com/photo-1608759833897-3f6e1e8a1b44" alt="Friday Meal">
-          <h5>Fish & Veg Curry</h5>
-          <p>Delicious light fish curry with seasonal vegetables.</p>
+      <div class="col-md‑4 animate‑pop delay5">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Friday</span>
+          <img src="https://images.pexels.com/photos/1640771/pexels‑photo‑1640771.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Middle East Rice Bowl" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Middle East Rice Bowl</h5>
+            <p>A wholesome rice bowl with Middle Eastern spices, protein, and fresh sides.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SATURDAY -->
+      <div class="col-md‑4 animate‑pop delay6">
+        <div class="meal‑card position‑relative">
+          <span class="day‑pill badge bg‑success text‑white">Saturday</span>
+          <img src="https://images.pexels.com/photos/1640773/pexels‑photo‑1640773.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=800&h=600"
+               alt="Dandelion Salad & Wings" class="img‑fluid">
+          <div class="p‑3">
+            <h5 class="fw‑bold">Dandelion Salad & Wings</h5>
+            <p>Fresh dandelion greens paired with flavorful grilled chicken wings.</p>
+          </div>
         </div>
       </div>
 
@@ -103,9 +128,9 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer py-4">
-  <div class="container text-center">
-    <h4>GreenHuman</h4>
+<footer class="footer">
+  <div class="container text‑center">
+    <h4 class="fw‑bold">GreenHuman</h4>
     <p>Real food. Real science. Real results.</p>
     <p>📞 +91 73566 70157</p>
     <p class="small">We believe healthy eating should be simple, sustainable, and enjoyable.</p>
