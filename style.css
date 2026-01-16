@@ -5,10 +5,10 @@ body {
   background: #f9fdf9;
 }
 
-/* HERO */
+/* HERO BANNER — NUTRIGATE STYLE */
 .hero-banner {
   position: relative;
-  height: 85vh;
+  height: 65vh; /* ≈ 1:1.2 ratio */
   overflow: hidden;
 }
 
@@ -19,11 +19,20 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.2s ease;
+  transform: scale(1.05);
+  transition: opacity 1.8s ease-in-out, transform 6s ease-in-out;
 }
 
 .hero-img.active {
   opacity: 1;
+  transform: scale(1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 55vh;
+  }
 }
 
 .hero-overlay {
