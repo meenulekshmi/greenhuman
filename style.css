@@ -220,4 +220,37 @@ body {
     transform: translateY(0);
   }
 }
+/* ICON INSTEAD OF IMAGE */
+
+.meal-icon {
+  font-size: 42px;
+  color: #2f8f5b;
+  margin-bottom: 14px;
+  animation: floatIn 0.8s ease forwards;
+}
+
+/* DIFFERENT ICON COLORS PER DAY (SUBTLE) */
+.monday   .meal-icon { color: #2f8f5b; }
+.tuesday  .meal-icon { color: #3a9d6d; }
+.wednesday.meal-icon { color: #4da57a; }
+.thursday .meal-icon { color: #5bb388; }
+.friday   .meal-icon { color: #6bc096; }
+
+/* FADE + MOVE UP (NUTRIGATE STYLE) */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SOFT HOVER EFFECT */
+.meal-card:hover .meal-icon {
+  transform: scale(1.08);
+}
+
 
