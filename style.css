@@ -4,12 +4,20 @@ body {
   padding-top: 70px;
   background: #f9fdf9;
 }
-
-/* HERO BANNER — NUTRIGATE STYLE */
+/* HERO BANNER — CONSISTENT ACROSS DEVICES */
 .hero-banner {
   position: relative;
-  height: 65vh; /* ≈ 1:1.2 ratio */
+  height: 65vh;
+  min-height: 420px;
+  max-height: 520px;
   overflow: hidden;
+}
+
+/* Mobile browser safe height */
+@supports (-webkit-touch-callout: none) {
+  .hero-banner {
+    height: 60svh; /* stable mobile height */
+  }
 }
 
 .hero-img {
@@ -28,31 +36,21 @@ body {
   transform: scale(1);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-banner {
-    height: 55vh;
-  }
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* TEXT CONSISTENCY */
 .hero-title {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
 .hero-subtitle {
-  color: #e6f5ec;
-  margin-top: 10px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 55vh;
+    min-height: 360px;
+  }
 }
 
 /* PLANS */
