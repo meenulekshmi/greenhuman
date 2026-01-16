@@ -102,3 +102,89 @@ body {
   padding: 30px 0;
   margin-top: 40px;
 }
+/* ---------- LUNCH PLAN PAGE ---------- */
+
+.plan-header {
+  padding: 120px 0 60px;
+  background: #f4fbf6;
+}
+
+.plan-header h1 {
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.plan-header .tagline {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.plan-main {
+  padding: 60px 0;
+}
+
+.plan-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.plan-box h2 {
+  font-size: 2.5rem;
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+.plan-box h2 span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.plan-subtitle {
+  margin: 10px 0 25px;
+  color: #777;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-features li {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.plan-cta {
+  margin-top: 30px;
+}
+
+.plan-cta .btn {
+  padding: 12px 32px;
+  border-radius: 30px;
+}
+
+/* WHY SECTION */
+.why-section {
+  background: #f9fdf9;
+  padding: 70px 0;
+}
+
+.why-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-card h5 {
+  color: #1b5e20;
+  font-weight: 600;
+}
+
