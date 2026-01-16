@@ -217,4 +217,40 @@ body {
     height: 160px;
   }
 }
+/* ===============================
+   NAVBAR – RESTORE VISIBILITY
+   =============================== */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1f2933 !important;
+}
+
+.nav-link {
+  color: #1f2933 !important;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.nav-link:hover {
+  color: #1b8f4b !important;
+}
+
+/* Mobile navbar */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0);
+}
+
 
