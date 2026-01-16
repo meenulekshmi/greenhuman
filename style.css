@@ -1,308 +1,104 @@
-/* -----------------------------
-   VARIABLES & RESET
------------------------------ */
-:root {
-  --greenhuman-green: #2c7a7b; /* Official GreenHuman green */
-  --white: #ffffff;
-  --text-dark: #1f2933;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
-  background-color: #f9fdf9;
-  color: var(--text-dark);
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fdf9;
+  color: #1f2933;
 }
 
-/* -----------------------------
-   NAVBAR
------------------------------ */
-.navbar {
-  background-color: var(--white) !important;
-  padding: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
-}
-
-.navbar .navbar-brand {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: var(--greenhuman-green) !important;
-}
-
-.navbar .nav-link {
-  color: var(--text-dark) !important;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  color: var(--greenhuman-green) !important;
-}
-
-/* -----------------------------
-   HERO / CAROUSEL
------------------------------ */
-.hero-carousel {
-  position: relative;
-  height: 400px;
-}
-
-.hero-carousel img {
-  object-fit: cover;
-  height: 400px;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.35);
-}
-
-.carousel-caption h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.carousel-caption p {
-  font-size: 1.2rem;
-  color: var(--white);
-}
-
-/* -----------------------------
-   CONTENT SECTION
------------------------------ */
-.content-section {
-  padding: 5rem 0;
-}
-
+/* TITLES */
 .section-title {
-  font-size: 2rem;
+  text-align: center;
   font-weight: 700;
-  color: var(--greenhuman-green);
-  margin-bottom: 2rem;
+  margin: 40px 0;
+  color: #1f5d2b;
 }
 
-/* -----------------------------
-   PLANS SECTION
------------------------------ */
-.plans-section, .plans-preview {
-  padding: 5rem 0;
+/* PLANS PREVIEW */
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .plan-card {
-  background: var(--white);
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
 }
 
 .plan-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
 }
 
-.plan-card.featured {
-  border: 2px solid var(--greenhuman-green);
-  background: #e6fffa;
+.plan-banner {
+  padding: 25px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.plan-card h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
+.plan-banner.green { background: #1f5d2b; }
+.plan-banner.dark { background: #144022; }
+.plan-banner.combo { background: #2e7d32; }
 
-.plan-card .price {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--greenhuman-green);
-  margin: 1rem 0;
-}
-
-.plan-card ul {
-  padding-left: 1rem;
-}
-
-.plan-card ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Buttons */
-.plan-card .btn {
-  border-radius: 50px;
-  padding: 0.5rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-/* Solid green buttons */
-.plan-card .btn-success {
-  background-color: var(--greenhuman-green) !important;
-  border-color: var(--greenhuman-green) !important;
-  color: var(--white) !important;
-}
-
-.plan-card .btn-success:hover {
-  background-color: #23665d !important;
-  border-color: #23665d !important;
-}
-
-/* Outline green buttons */
-.plan-card .btn-outline-success {
-  color: var(--greenhuman-green) !important;
-  border-color: var(--greenhuman-green) !important;
-}
-
-.plan-card .btn-outline-success:hover {
-  background-color: var(--greenhuman-green) !important;
-  color: var(--white) !important;
-}
-
-/* -----------------------------
-   BLOG SECTION
------------------------------ */
-.blog-section {
-  padding: 5rem 0;
-}
-
-.blog-card {
-  background: var(--white);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-/* -----------------------------
-   FOOTER - FORCED GREEN
------------------------------ */
-.footer {
-  background-color: var(--greenhuman-green) !important; /* GreenHuman green */
-  color: #ffffff !important;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.footer h4 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #ffffff !important;
-}
-
-.footer p, 
-.footer .small, 
-.footer .copy {
-  color: #ffffff !important;
-}
-
-.footer .small {
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-}
-
-.footer .copy {
-  margin-top: 1rem;
-  font-size: 0.8rem;
-}
-
-/* -----------------------------
-   RESPONSIVE
------------------------------ */
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 2rem;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-
-  .plan-card {
-    margin-bottom: 1.5rem;
-  }
-}
-/* =============================
-   NUTRIGATE-STYLE PLANS PAGE
-============================= */
-
-.plans-page {
-  padding: 4rem 0;
-}
-
-.nutri-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-}
-
-.nutri-card.featured {
-  border: 2px solid #2c7a7b;
-  background: #e6fffa;
-}
-
-.nutri-card h3 {
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.tag-row {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.tag {
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.tag.lunch { background: #fff3cd; color: #856404; }
-.tag.dinner { background: #e0e7ff; color: #3730a3; }
-.tag.combo { background: #ffe4e6; color: #9f1239; }
-.tag.light { background: #f1f5f9; color: #475569; }
-.tag.green { background: #2c7a7b; color: #ffffff; }
-
-.desc {
-  color: #555;
-  margin-bottom: 1rem;
+.plan-body {
+  padding: 20px;
 }
 
 .price {
-  font-size: 1.8rem;
+  color: #1f5d2b;
   font-weight: 700;
-  color: #2c7a7b;
-  margin-bottom: 1.2rem;
 }
 
-.btn-group-custom {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+/* HERO */
+.plan-hero {
+  background: linear-gradient(135deg, #1f5d2b, #2e7d32);
+  color: white;
+  padding: 60px 0;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .nutri-card {
-    padding: 1.5rem;
-  }
+.hero-tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
 }
 
+/* INCLUDED */
+.included {
+  padding: 50px 0;
+}
+
+.meal-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* PRICING */
+.pricing {
+  background: #f0f7f1;
+  padding: 50px 0;
+}
+
+.price-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+  background: #1f5d2b;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
