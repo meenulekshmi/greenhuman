@@ -138,3 +138,83 @@ body {
   color: #fff;
   padding: 40px 0;
 }
+/* ===============================
+   LUNCH PAGE – STYLE RESTORE
+   =============================== */
+
+.lunch-page .plan-hero {
+  height: 420px;
+  background: linear-gradient(
+    rgba(20,110,60,0.75),
+    rgba(20,110,60,0.75)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lunch-page .plan-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #fff;
+  font-weight: 700;
+}
+
+.lunch-page .plan-hero p {
+  color: #e6f5ec;
+  margin-top: 8px;
+}
+
+/* Badges like Nutrigate */
+.lunch-page .badge {
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #1f2933;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Meal cards untouched – just life */
+.lunch-page .meal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.lunch-page .meal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Day pill */
+.lunch-page .day-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 0.75rem;
+}
+
+/* Images small – NOT 1:1 */
+.lunch-page .meal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mobile lunch page */
+@media (max-width: 768px) {
+  .lunch-page .plan-hero {
+    height: 360px;
+  }
+
+  .lunch-page .meal-card img {
+    height: 160px;
+  }
+}
+
